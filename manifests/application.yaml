@@ -8,14 +8,14 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: wil42
+      app: will-playground
   template:
     metadata:
       labels:
-        app: wil42
+        app: will-playground
     spec:
       containers:
-      - name: wil42
+      - name: will-playground
         image: wil42/playground:v1
         ports:
         - containerPort: 8888
@@ -25,14 +25,14 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: svc-wil42
+  name: svc-will-playground
   namespace: dev
   labels:
-    app: wil42
+    app: will-playground
 spec:
-  type: NodePort
+  type: will-playground
   selector:
-    app: wil42
+    app: will-playground
   ports:
     - protocol: TCP
       port: 8888
