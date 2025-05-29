@@ -1,10 +1,10 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: wil42
+  name: will-playground
   namespace: dev
   labels:
-    app: wil42
+    app: will-playground
 spec:
   selector:
     matchLabels:
@@ -25,7 +25,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: svc-will-playground
+  name: will-playground
   namespace: dev
   labels:
     app: will-playground
