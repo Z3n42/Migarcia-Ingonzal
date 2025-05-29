@@ -30,7 +30,7 @@ metadata:
   labels:
     app: will-playground
 spec:
-  type: will-playground
+  type: NodePort
   selector:
     app: will-playground
   ports:
